@@ -49,7 +49,7 @@ The network’s task is to predict the correct XOR output based on the two binar
 
 ---
 
-📊 Understanding the Results
+####📊 Understanding the Results
 Fast convergence: Large learning rates may cause quick initial drops in loss.
 
 Instability: Too high a learning rate can make the model diverge.
@@ -60,7 +60,7 @@ Slow training: Very small learning rates lead to gradual but stable improvement.
 
 Using a log-scale for loss helps visualize subtle differences when losses are very small.
 
-🔬 Example Analysis
+####🔬 Example Analysis
 At LR = 0.5, training may oscillate before stabilizing.
 
 At LR = 0.1, loss decreases smoothly and steadily.
@@ -69,7 +69,7 @@ At LR = 0.01, training is stable but slower to converge.
 
 This experiment highlights why tuning the learning rate is crucial in neural network optimization.
 
-💡 Possible Extensions
+####💡 Possible Extensions
 Save trained models with torch.save(model.state_dict(), "model_lr_0.1.pth").
 
 Add a decision boundary visualization.
@@ -80,11 +80,11 @@ Plot accuracy in addition to loss.
 
 Experiment with ReLU or Tanh activations.
 
-🧾 License
+####🧾 License
 This project is released under the MIT License.
 You are free to use, modify, and distribute it with attribution.
 
-🤝 Contributions
+####🤝 Contributions
 Contributions and suggestions are always welcome!
 Open an issue or submit a pull request to discuss improvements.
 
